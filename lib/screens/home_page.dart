@@ -1,5 +1,6 @@
 import 'package:curriculum_vitae/widgets/widget_contakt_info.dart';
 import 'package:curriculum_vitae/widgets/widget_mysckils_info.dart';
+import 'package:curriculum_vitae/widgets/widget_portfolio_info.dart';
 import 'package:curriculum_vitae/widgets/widget_user_Info.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +39,10 @@ class Home_page extends StatelessWidget {
               width: 10,
             ),
             Widget_Mysckils_Info(),
+            SizedBox(
+              width: 10,
+            ),
+            Widget_Portfolio_Info(),
           ],
         ),
       ),
