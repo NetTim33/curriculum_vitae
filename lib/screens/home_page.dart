@@ -1,4 +1,5 @@
 import 'package:curriculum_vitae/widgets/widget_contakt_info.dart';
+import 'package:curriculum_vitae/widgets/widget_mysckils_info.dart';
 import 'package:curriculum_vitae/widgets/widget_user_Info.dart';
 import 'package:flutter/material.dart';
 
@@ -25,14 +26,20 @@ class Home_page extends StatelessWidget {
         ],
         centerTitle: true,
       ),
-      body: Column(
-        children: <Widget>[
-          Widget_User_Info(),
-          SizedBox(
-            width: 10,
-          ),
-          Widget_Contact_Info(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Widget_User_Info(),
+            SizedBox(
+              width: 10,
+            ),
+            Widget_Contact_Info(),
+            SizedBox(
+              width: 10,
+            ),
+            Widget_Mysckils_Info(),
+          ],
+        ),
       ),
     );
   }
